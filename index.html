@@ -1,102 +1,208 @@
 <!DOCTYPE html>
-Home.html
-<a href="index.html" style="color:white;margin:10px;">Home</a>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A1 Marbles & Tiles Installer</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background-color: #333; color: white; text-align: center; padding: 20px; }
-        section { padding: 20px; max-width: 1200px; margin: auto; }
-        .team, .portfolio { display: flex; flex-wrap: wrap; justify-content: space-around; }
-        .member { text-align: center; margin: 10px; width: 200px; }
-        .member img { width: 150px; height: 150px; border-radius: 50%; }
-        .portfolio img { width: 300px; height: 200px; margin: 10px; }
-        video { width: 300px; height: 200px; margin: 10px; }
-        form { background: white; padding: 20px; border-radius: 5px; }
-        input, textarea { width: 100%; margin: 10px 0; padding: 10px; }
-        button { background: #333; color: white; padding: 10px; border: none; cursor: pointer; }
-        footer { background: #333; color: white; text-align: center; padding: 10px; }
-    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A1 Marbles & Tiles Installer</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#fff6fb;
+}
+
+header{
+background:#ffb6d9;
+text-align:center;
+padding:20px;
+}
+
+nav{
+background:#ffd6ec;
+text-align:center;
+padding:10px;
+}
+
+nav a{
+margin:15px;
+font-weight:bold;
+cursor:pointer;
+}
+
+section{
+display:none;
+padding:20px;
+text-align:center;
+}
+
+.active{
+display:block;
+}
+
+.member img{
+width:180px;
+height:180px;
+border-radius:50%;
+}
+
+.team{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.member{
+margin:15px;
+width:200px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:10px;
+}
+
+.gallery img{
+width:100%;
+}
+
+iframe{
+width:300px;
+height:200px;
+margin:10px;
+}
+
+footer{
+background:#ffb6d9;
+text-align:center;
+padding:10px;
+}
+</style>
+
+<script>
+function showPage(id){
+var sections=document.querySelectorAll("section");
+sections.forEach(function(sec){
+sec.classList.remove("active");
+});
+document.getElementById(id).classList.add("active");
+}
+</script>
+
 </head>
 <body>
-    <header>
-        <h1>A1 Marbles & Tiles Installer</h1>
-        <p>Expert Marble and Tile Installation Services</p>
-        <p>Based in Shantipalli Saheed Nagar, Bhubaneswar, Khurda, PIN-751007 | Serving All Odisha</p>
-    </header>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We are a trusted team of skilled mistris and laborers providing high-quality marble and tile installation across Odisha. Contact us for residential or commercial projects.</p>
-    </section>
-    Team.html
-<a href="team.html" style="color:white;margin:10px;">Team</a>
-    <section id="team">
-        <h2>Our Team</h2>
-        <div class="team">
-            <div class="member">
-                <img src="https://i.imgur.com/e2ltygN.jpeg" alt="Musaph Photo"> <!-- Replace with your uploaded link -->
-                <h3>Head Mistri: Musaph</h3>
-                <p>Lead installer with years of experience.</p>
-            </div>
-            <div class="member">
-                <img src="https://i.imgur.com/CsWEpg5.jpeg" alt="Rafit Photo"> <!-- Replace -->
-                <h3>2nd Mistri: Rafit</h3>
-                <p>Skilled mistri for precise work.</p>
-            </div>
-            <div class="member">
-                <img src="https://i.imgur.com/WmHaZOu.jpeg" alt="Saruk Photo"> <!-- Replace -->
-                <h3>3rd Mistri: Saruk</h3>
-                <p>Expert in tile laying.</p>
-            </div>
-            <div class="member">
-                <img src="https://i.imgur.com/XDInago.jpeg" alt="Salim Photo"> <!-- Replace -->
-                <h3>4th Mistri: Salim</h3>
-                <p>Specialist in marble installations.</p>
-            </div>
-            <div class="member">
-                <img src="https://i.imgur.com/8JPio3l.jpeg" alt="Baasu Photo"> <!-- Replace -->
-                <h3>4th Mistri: Baasu</h3>
-                <p>Skilled helper and installer.</p>
-            </div>
-            <div class="member">
-                <img src="https://i.imgur.com/placeholder6.jpg" alt="Jabed Photo"> <!-- Replace -->
-                <h3>Head Mistri: Jabed</h3>
-                <p>Lead supervisor for large projects.</p>
-            </div>
-            <div class="member">
-                <img src="https://i.imgur.com/rfBX7aC.jpeg" alt="sanjib Photo"> <!-- Replace -->
-                <h3>2nd Mistri: sanjib</h3>
-                <p>Skilled mistri for precise work.</p>
-            </div>
-            <!-- Add more members up to 8-10 with similar structure -->
-        </div>
-    </section>
-    Gallery.html
-<a href="gallery.html" style="color:white;margin:10px;">Gallery</a>
-    <section id="portfolio">
-        <h2>Our Work Portfolio</h2>
-        <div class="portfolio">
-            <img src="https://i.imgur.com/JBrTwRU.jpeg" alt="Marble Installation"> <!-- Replace with your work photo links -->
-            <img src="https://i.imgur.com/KGXwS1D.jpeg" alt="Tile Work">
-            <img src="https://i.imgur.com/tK83f3p.jpeg" alt="Tile Work">
-            <img src="https://i.imgur.com/g6SSVlm.jpeg" alt="Tile Work">
-            <img src="https://i.imgur.com/TlDEuZR.jpeg" alt="Tile Work">
-            <img src="https://i.imgur.com/5NU0ew3.jpeg" alt="Tile Work">
-            <img src="https://i.imgur.com/ieQqp99.jpeg" alt="Tile Work">
-            <img src="https://i.imgur.com/Dhq1QVn.jpeg" alt="Tile Work">
-            <img src="https://i.imgur.com/9Yh0xmi.jpeg" alt="Tile Work">
-            <img src="https://i.imgur.com/YbUUzjb.jpeg" alt="Tile Work">
-            <img src="https://i.imgur.com/IrNfynd.jpeg" alt="Tile Work">
-            <img src="https://i.imgur.com/2sHnYGp.jpeg" alt="Tile Work">
-            <img src="https://i.imgur.com/vla2G1r.jpeg" alt="Tile Work">
-            <img src="https://i.imgur.com/jlIIosg.jpeg" alt="Tile Work">
-            <img src="https://i.imgur.com/xI3IKLJ.jpeg" alt="Tile Work">
-            <img src="https://i.imgur.com/RXfT9Wa.jpeg" alt="Tile Work">
-            <img src="https://i.imgur.com/Zf3i0g0.jpeg" alt="Tile Work">
+<header>
+<h1>A1 Marbles & Tiles Installer</h1>
+<p>Expert Marble and Tile Installation Services</p>
+</header>
+
+<nav>
+<a onclick="showPage('home')">Home</a>
+<a onclick="showPage('team')">Team</a>
+<a onclick="showPage('gallery')">Gallery</a>
+<a onclick="showPage('contact')">Contact</a>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="active">
+<h2>Head Mistri</h2>
+<img src="https://i.imgur.com/e2ltygN.jpeg">
+<h3>Musaph</h3>
+<p>Lead installer with years of experience.</p>
+</section>
+</p>
+        <h3>Submit a Complaint or Feedback</h3>
+        <form action="#" method="post"> <!-- In a real site, link to a backend like Formspree for emails -->
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Complaint or Feedback" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+<!-- TEAM -->
+<section id="team">
+<h2>Our Team</h2>
+<div class="team">
+
+<div class="member">
+<img src="https://i.imgur.com/e2ltygN.jpeg">
+<h3>Head Mistri: Musaph</h3>
+</div>
+
+<div class="member">
+<img src="https://i.imgur.com/CsWEpg5.jpeg">
+<h3>2nd Mistri: Rafit</h3>
+</div>
+
+<div class="member">
+<img src="https://i.imgur.com/WmHaZOu.jpeg">
+<h3>3rd Mistri: Saruk</h3>
+</div>
+
+<div class="member">
+<img src="https://i.imgur.com/XDInago.jpeg">
+<h3>4th Mistri: Salim</h3>
+</div>
+
+<div class="member">
+<img src="https://i.imgur.com/8JPio3l.jpeg">
+<h3>4th Mistri: Baasu</h3>
+</div>
+
+<div class="member">
+<img src="https://i.imgur.com/rfBX7aC.jpeg">
+<h3>2nd Mistri: Sanjib</h3>
+</div>
+
+</div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+<h2>Our Work Gallery</h2>
+<div class="gallery">
+
+<img src="https://i.imgur.com/JBrTwRU.jpeg">
+<img src="https://i.imgur.com/KGXwS1D.jpeg">
+<img src="https://i.imgur.com/tK83f3p.jpeg">
+<img src="https://i.imgur.com/g6SSVlm.jpeg">
+<img src="https://i.imgur.com/TlDEuZR.jpeg">
+<img src="https://i.imgur.com/5NU0ew3.jpeg">
+<img src="https://i.imgur.com/ieQqp99.jpeg">
+<img src="https://i.imgur.com/Dhq1QVn.jpeg">
+<img src="https://i.imgur.com/9Yh0xmi.jpeg">
+<img src="https://i.imgur.com/YbUUzjb.jpeg">
+<img src="https://i.imgur.com/IrNfynd.jpeg">
+<img src="https://i.imgur.com/2sHnYGp.jpeg">
+<img src="https://i.imgur.com/vla2G1r.jpeg">
+<img src="https://i.imgur.com/jlIIosg.jpeg">
+<img src="https://i.imgur.com/xI3IKLJ.jpeg">
+<img src="https://i.imgur.com/RXfT9Wa.jpeg">
+<img src="https://i.imgur.com/Zf3i0g0.jpeg">
+<img src="https://i.imgur.com/zB7NQvC.jpeg">
+<img src="https://i.imgur.com/H2svRaL.jpeg">
+
+<!-- YOUTUBE VIDEOS -->
+<iframe src="https://www.youtube.com/embed/rlrOb4kiYXA" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/xZ3HWo_TTQk" allowfullscreen></iframe>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact Us</h2>
+<p>Mobile: 7427903063</p>
+<p>Email: marbletilesfiting786@gmail.com</p>
+<p><a href="https://wa.me/917427903063" target="_blank">WhatsApp Now</a></p>
+</section>
+
+<footer>
+© 2026 A1 Marbles & Tiles Installer
+</footer>
+
+</body>
+    </html>            <img src="https://i.imgur.com/Zf3i0g0.jpeg" alt="Tile Work">
             <img src="https://i.imgur.com/zB7NQvC.jpeg" alt="Tile Work">
             <img src="https://i.imgur.com/H2svRaL.jpeg" alt="Tile Work">
             <video controls>
